@@ -1,0 +1,26 @@
+<button type="submit" class="btn btn-primary btn-lg btn-block">PROMO</button>
+<div class="row">
+    <div class="col-md-6 mx-auto mt-5">
+   
+        <div class="card">
+            <div class="card-body">
+                <h1 class="text-center">INGRESAR</h1>
+                <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                    <div class="form-group">
+                        <label for="email">Ingrese su email</label>
+                        <input formControlName="email" type="email" class="form-control"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Ingrese su contraseña</label>
+                        <input formControlName="password" type="password" class="form-control"/>
+                    </div>
+                    <button class="btn btn-primary btn-lg btn-block">INGRESAR</button>
+                </form>
+                <p CLASS="text-center mt-3">Nuevo en MAIPOVENDE?<a [routerLink]="['/register']"> <b> Crea una cuenta.</b></a></p>
+                <p CLASS="text-center mt-3">Olvidaste tu contraseña...?<a [routerLink]="['/forgot-password']"> <b> Recupera tu clave.</b></a></p>          
+            </div>
+
+        </div>
+           
+    </div>
+</div>

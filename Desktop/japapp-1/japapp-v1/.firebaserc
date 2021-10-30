@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "japapp-ac116": {
+      "hosting": {
+        "japapp-v1": [
+          "japapp-ac116"
+        ]
+      }
+    }
+  }
+}

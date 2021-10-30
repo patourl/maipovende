@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "japapp-v1",
+      "public": "dist/japapp-v1",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
